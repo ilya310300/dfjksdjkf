@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:local="clr-namespace:Spatecon" 
+             x:Class="Spatecon.MainPage" 
+             xmlns:behavior="clr-namespace:Spatecon">
+    <ContentPage.Content>
+        <ScrollView>
+            <Grid BackgroundColor="White">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*">
+                    </RowDefinition>
+                    <RowDefinition Height="80">
+                    </RowDefinition>
+                    <RowDefinition Height="2">
+                    </RowDefinition>
+                    <RowDefinition Height="50">
+                    </RowDefinition>
+                    <RowDefinition Height="Auto">
+                    </RowDefinition>
+                    <RowDefinition Height="20">
+                    </RowDefinition>
+                    <RowDefinition Height="50">
+                    </RowDefinition>
+                    <RowDefinition Height="4*">
+                    </RowDefinition>
+                    <RowDefinition Height="Auto">
+                    </RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*">
+                    </ColumnDefinition>
+                    <ColumnDefinition Width="340">
+                    </ColumnDefinition>
+                    <ColumnDefinition Width="*">
+                    </ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Frame x:Name="CF" Grid.Row="4" Grid.Column="1" BackgroundColor="#f0f0f0" CornerRadius="10" Margin="0,10,0,0">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="50">
+                            </RowDefinition>
+                            <RowDefinition Height="50">
+                            </RowDefinition>
+                            <RowDefinition Height="Auto">
+                            </RowDefinition>
+                            <RowDefinition Height="*">
+                            </RowDefinition>
+                        </Grid.RowDefinitions>
+                        <Image x:Name="MI" Grid.Row="0" Grid.Column="0" Source="">
+                        </Image>
+                        <Grid Grid.Row="1" Grid.Column="0">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*">
+                                </ColumnDefinition>
+                                <ColumnDefinition Width="50">
+                                </ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+                            <Entry x:Name="NE" Grid.Row="0" Grid.Column="0" Placeholder="Номер карты" Margin="2" Keyboard="Numeric" TextChanged="Handle_TextChanged" Focused="Handle_Focused" Unfocused="Handle_Unfocused" BackgroundColor="White">
+                                <Entry.Behaviors>
+                                    <behavior:MaskedBehavior Mask="XXXX XXXX XXXX XXXX XXX" />
+                                </Entry.Behaviors>
+                            </Entry>
+                            <Image x:Name="photobut" Grid.Row="0" Grid.Column="1" Margin="5" Source="camera.png">
+                                <Image.GestureRecognizers>
+                                    <TapGestureRecognizer Tapped="TapGestureRecognizer_OnTapped">
+                                    </TapGestureRecognizer>
+                                </Image.GestureRecognizers>
+                            </Image>
+                        </Grid>
+                        <Label Grid.Row="2" Grid.Column="0" Text="VALID THRU" FontSize="Micro" HorizontalTextAlignment="Start">
+                        </Label>
+                        <Grid Grid.Row="3" Grid.Column="0">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto">
+                                </RowDefinition>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*">
+                                </ColumnDefinition>
+                                <ColumnDefinition Width="*">
+                                </ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+                            <Grid Grid.Row="0" Grid.Column="0">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*">
+                                    </ColumnDefinition>
+                                    <ColumnDefinition Width="10">
+                                    </ColumnDefinition>
+                                    <ColumnDefinition Width="*">
+                                    </ColumnDefinition>
+                                </Grid.ColumnDefinitions>
+                                <Entry x:Name="DateEntry1" Grid.Row="0" Grid.Column="0" Keyboard="Numeric" HorizontalTextAlignment="Center" MaxLength="2" TextChanged="Handle_TextChanged_1" Placeholder="MM" Focused="Handle_Focused" Unfocused="Handle_Unfocused" BackgroundColor="White">
+                                </Entry>
+                                <Label Grid.Row="0" Grid.Column="1" Text="/" FontSize="Large" VerticalOptions="Center">
+                                </Label>
+                                <Entry x:Name="DateEntry2" Grid.Row="0" Grid.Column="2" Keyboard="Numeric" HorizontalTextAlignment="Center" MaxLength="2" TextChanged="Handle_TextChanged_2" Placeholder="YY" Focused="Handle_Focused" Unfocused="Handle_Unfocused"  BackgroundColor="White">
+                                </Entry>
+                            </Grid>
+                            <Grid Grid.Row="0" Grid.Column="1">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*">
+                                    </ColumnDefinition>
+                                    <ColumnDefinition Width="*">
+                                    </ColumnDefinition>
+                                </Grid.ColumnDefinitions>
+                                <Label Grid.Row="0" Grid.Column="0" Text="Три цифры на обороте карты" LineBreakMode="WordWrap" FontSize="Micro" VerticalOptions="Center">
+                                </Label>
+                                <Entry x:Name="PasEntry" Grid.Row="0" Grid.Column="1" IsPassword="true" MaxLength="3" Keyboard="Numeric" Placeholder="CVC" Focused="Handle_Focused" Unfocused="Handle_Unfocused" BackgroundColor="White">
+                                </Entry>
+                            </Grid>
+                        </Grid>
+                    </Grid>
+                </Frame>
+                <Button Grid.Row="6" Grid.Column="1" Text="Отправить" FontSize="22" HorizontalOptions="Center" Padding="20,5" Margin="0,10,0,0" BackgroundColor="Navy" BorderRadius="10" TextColor="White" Clicked="Handle_Clicked">
+                </Button>
+                <Label x:Name="ExLabel" Grid.Row="5" Grid.Column="1" TextColor="Red" FontSize="Micro">
+                </Label>
+                <Grid x:Name="SG" IsVisible="false" Grid.Row="8" Grid.Column="1">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="260">
+                        </RowDefinition>
+                    </Grid.RowDefinitions>
+                    <BoxView Grid.Row="0" Grid.Column="0">
+                    </BoxView>
+                </Grid>
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

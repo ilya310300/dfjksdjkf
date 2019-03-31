@@ -1,0 +1,37 @@
+﻿<Properties StartupConfiguration="{4A4425B7-F761-49AE-BF3A-7F138BAF2F2F}|Default">
+  <MonoDevelop.Ide.ItemProperties.Spatecon.Android PreferredExecutionTarget="Android.520091994f86c439" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Spatecon/MainPage.xaml.cs">
+    <Files>
+      <File FileName="Spatecon.Android/MainActivity.cs" Line="14" Column="52" />
+      <File FileName="Spatecon.Android/Resources/values/styles.xml" Line="3" Column="25" />
+      <File FileName="../../Downloads/Xacaton — копия/Table/Table.Android/Resources/values/styles.xml" Line="44" Column="1" />
+      <File FileName="Spatecon/MainPage.xaml" Line="61" Column="91" />
+      <File FileName="Spatecon/MainPage.xaml.cs" Line="85" Column="34" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Spatecon" expanded="True">
+            <Node name="Spatecon" expanded="True">
+              <Node name="Dependencies" expanded="True" />
+              <Node name="App.xaml" expanded="True" />
+              <Node name="MainPage.xaml" expanded="True">
+                <Node name="MainPage.xaml.cs" selected="True" />
+              </Node>
+              <Node name="Page1.xaml" expanded="True" />
+            </Node>
+            <Node name="Spatecon.Android" expanded="True">
+              <Node name="Resources" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

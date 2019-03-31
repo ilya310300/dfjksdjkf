@@ -1,0 +1,17 @@
+/Users/egorka/Projects/Spatecon/Spatecon/bin/Debug/netstandard2.0/Spatecon.deps.json
+/Users/egorka/Projects/Spatecon/Spatecon/bin/Debug/netstandard2.0/Spatecon.dll
+/Users/egorka/Projects/Spatecon/Spatecon/bin/Debug/netstandard2.0/Spatecon.pdb
+/Users/egorka/Projects/Spatecon/Spatecon/obj/Debug/netstandard2.0/App.xaml.g.cs
+/Users/egorka/Projects/Spatecon/Spatecon/obj/Debug/netstandard2.0/InfoPage.xaml.g.cs
+/Users/egorka/Projects/Spatecon/Spatecon/obj/Debug/netstandard2.0/MainPage.xaml.g.cs
+/Users/egorka/Projects/Spatecon/Spatecon/obj/Debug/netstandard2.0/Spatecon.csproj.CoreCompileInputs.cache
+/Users/egorka/Projects/Spatecon/Spatecon/obj/Debug/netstandard2.0/Spatecon.AssemblyInfoInputs.cache
+/Users/egorka/Projects/Spatecon/Spatecon/obj/Debug/netstandard2.0/Spatecon.AssemblyInfo.cs
+/Users/egorka/Projects/Spatecon/Spatecon/obj/Debug/netstandard2.0/XamlC.stamp
+/Users/egorka/Projects/Spatecon/Spatecon/obj/Debug/netstandard2.0/Spatecon.dll
+/Users/egorka/Projects/Spatecon/Spatecon/obj/Debug/netstandard2.0/Spatecon.pdb
+/Users/egorka/Projects/Spatecon/Spatecon/obj/Debug/netstandard2.0/Spatecon.csprojAssemblyReference.cache
+/Users/egorka/Projects/Spatecon/Spatecon/bin/Debug/netstandard2.0/bindinglib.dll
+/Users/egorka/Projects/Spatecon/Spatecon/bin/Debug/netstandard2.0/bindinglib.pdb
+/Users/egorka/Projects/Spatecon/Spatecon/obj/Debug/netstandard2.0/Spatecon.csproj.CopyComplete
+/Users/egorka/Projects/Spatecon/Spatecon/obj/Debug/netstandard2.0/Page1.xaml.g.cs

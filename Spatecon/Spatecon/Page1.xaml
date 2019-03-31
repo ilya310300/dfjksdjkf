@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Spatecon.Page1">
+    <ContentPage.Content>
+        <Grid BackgroundColor="White">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*">
+                    </RowDefinition>
+                    <RowDefinition Height="Auto">
+                    </RowDefinition>
+                    <RowDefinition Height="Auto">
+                    </RowDefinition>
+                    <RowDefinition Height="*">
+                    </RowDefinition>
+                </Grid.RowDefinitions>
+            <Frame Grid.Row="1" BorderColor="Yellow" BackgroundColor="#fff8b4" Margin="50,10" CornerRadius="10">
+                <Label Text = "Банковские карты" FontSize="Large"></Label>
+                <Frame.GestureRecognizers>
+                                    <TapGestureRecognizer Tapped="TapGestureRecognizer_OnTapped">
+                                    </TapGestureRecognizer>
+                                </Frame.GestureRecognizers>
+            </Frame>
+            <Frame Grid.Row="2" BorderColor="Yellow" BackgroundColor="#fff8b4" Margin="50,10" CornerRadius="10">
+                <Label Text = "Топливные карты" FontSize="Large"></Label>
+            </Frame>
+            </Grid>
+    </ContentPage.Content>
+</ContentPage>
